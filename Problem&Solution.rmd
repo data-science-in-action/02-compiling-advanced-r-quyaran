@@ -1,0 +1,40 @@
+---
+title: "Problems and Solution"
+author: "quyaran"
+date: "2020/3/20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# 下载源代码
+ https://github.com/hadley/adv-r/
+ 
+## install.packages("rmarkdown")
+   install.packages("devtools")
+# 运行
+devtools::install_github("hadley/sloop")
+devtools::install_github("hadley/emo")
+
+# 无法运行devtools包
+ git运行下面命令
+git config --global http.sslBackend "openssl"
+git config --global http.sslCAInfo [path to .pem file]
+
+# 无法从Github安装“ emo”：
+knitr::include_graphics("C:/Users/dell/Desktop/adv-r/error/2.PNG")
+
+# 未发现"xelatex"
+安装MiKTeX,当MiKTeX选择是否要安装丢失的软件包时，选择“始终动态安装丢失的软件包”。
+
+# Quitting from lines 223-235 (Introduciton.Rmd)
+修改第224行代码为
+contributors <- read.csv("contributors.csv", stringsAsFactors = FALSE,encoding = "UTF-8")
+
+# 错误提示：Fonts cannot be found
+从网上下载`Inconsolate` 和 `Andale Mono`字体
+
+# 解决问题
